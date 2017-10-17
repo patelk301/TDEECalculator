@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TDEE Calculator</string>
+    <string-array name="activity_list">
+        <item>Sedentary - Little or no Exercise/ desk job</item>
+        <item>Light exercise 1 – 3 days/ week</item>
+        <item>Moderate Exercise 3 – 5 days/ week</item>
+        <item>Heavy Exercise 6 – 7 days/ week</item>
+    </string-array>
+
+</resources>

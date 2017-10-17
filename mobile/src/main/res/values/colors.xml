@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="Sex">#99ccff</color>
+    <color name="text">#093cf2</color>
+    <color name="hint">#f2f209</color>
+    <color name="border">#80bfff</color>
+    <color name="border2">#264faf</color>
+    <color name="grey">#605f5f</color>
+
+
+    #00e6e6
+</resources>

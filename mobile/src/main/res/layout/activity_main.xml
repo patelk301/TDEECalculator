@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:background="@color/border"
+
+    tools:context="com.keyurmpatel.keyur.tdeecalculator.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <android.support.constraint.Guideline
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline10"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.32"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="115dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline11"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="234dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline12"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"
+        tools:layout_editor_absoluteY="57dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline13"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2"
+        tools:layout_editor_absoluteY="114dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline14"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3"
+        tools:layout_editor_absoluteY="170dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline15"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4"
+        tools:layout_editor_absoluteY="227dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="110dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/Sex"
+        android:text="Gender"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/maleSwitch"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline10" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="111dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/Sex"
+        android:text="Age"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline13"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintLeft_toLeftOf="@+id/textView33"
+        app:layout_constraintTop_toTopOf="@+id/guideline12" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="111dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/Sex"
+        android:text="Weight"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline14"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintLeft_toLeftOf="@+id/textView34"
+        app:layout_constraintTop_toTopOf="@+id/guideline13" />
+
+    <Switch
+        android:id="@+id/maleSwitch"
+        android:layout_width="111dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/Sex"
+        android:text="Male"
+        android:textAlignment="center"
+        android:textColor="@color/hint"
+        app:layout_constraintBottom_toBottomOf="@+id/femaleSwitch"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline10"
+        app:layout_constraintRight_toLeftOf="@+id/guideline11"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Switch
+        android:id="@+id/femaleSwitch"
+        android:layout_width="111dp"
+        android:layout_height="42dp"
+        android:background="@color/Sex"
+        android:text="Female"
+        android:textAlignment="center"
+        android:textColor="@color/hint"
+        app:layout_constraintBaseline_toBaselineOf="@+id/maleSwitch"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@+id/heightEditText2" />
+
+    <EditText
+        android:id="@+id/ageEditText"
+        android:layout_width="111dp"
+        android:layout_height="42dp"
+        android:background="@color/Sex"
+        android:ems="10"
+        android:hint=" years"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:textColorHint="@color/hint"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView34"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/maleSwitch"
+        app:layout_constraintRight_toRightOf="@+id/maleSwitch" />
+
+    <EditText
+        android:id="@+id/weightEditText"
+        android:layout_width="111dp"
+        android:layout_height="42dp"
+        android:background="@color/Sex"
+        android:ems="10"
+        android:hint="pounds"
+        android:inputType="number|numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:textColorHint="@color/hint"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView35"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/ageEditText"
+        app:layout_constraintRight_toRightOf="@+id/ageEditText" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="111dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/Sex"
+        android:text="Height"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/textView35"
+        app:layout_constraintTop_toTopOf="@+id/guideline14"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/heightEditText"
+        android:layout_width="111dp"
+        android:layout_height="42dp"
+        android:background="@color/Sex"
+        android:ems="10"
+        android:hint="feet"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:textColorHint="@color/hint"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView36"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/weightEditText"
+        app:layout_constraintRight_toRightOf="@+id/weightEditText" />
+
+    <EditText
+        android:id="@+id/heightEditText2"
+        android:layout_width="111dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/Sex"
+        android:ems="10"
+        android:hint="inches"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:textColorHint="@color/hint"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/heightEditText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline11"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline14"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline16"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"
+        tools:layout_editor_absoluteY="284dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="385dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/Sex"
+        android:text="Activity Level:"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+        app:layout_constraintLeft_toLeftOf="@+id/textView36"
+        app:layout_constraintTop_toTopOf="@+id/guideline15"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline18"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.81" />
+
+    <Button
+        android:id="@+id/calcButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline18"
+        app:layout_constraintVertical_bias="0.063"
+        app:layout_constraintRight_toLeftOf="@+id/guideline11"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline10"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline18"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline16"
+        app:layout_constraintVertical_bias="0.444">
+
+        <RadioButton
+            android:id="@+id/actRadioBtn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Sex"
+            android:text="Little or no Exercise/ desk job"
+            android:textColor="@color/hint"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/actRadioBtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Sex"
+            android:text="Light exercise/1 – 3 days/ week"
+            android:textColor="@color/hint"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/actRadioBtn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Sex"
+            android:text="Moderate Exercise  3 – 5 days/ week"
+            android:textColor="@color/hint"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/actRadioBtn4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Sex"
+            android:text="Heavy Exercise 6 – 7 days/ week"
+            android:textColor="@color/hint"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>
